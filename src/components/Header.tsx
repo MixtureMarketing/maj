@@ -89,7 +89,7 @@ const megaMenuVariants = {
     y: 20,
     transition: {
       duration: 0.3,
-      ease: "easeIn"
+      ease: "easeIn" as const
     }
   }
 };
@@ -240,7 +240,7 @@ export default function Header() {
                   )}
                   initial={{ width: 0, x: "-50%" }}
                   animate={{ width: activeDropdown === link.name ? "60%" : 0 }}
-                  transition={{ duration: 0.4, ease: "circOut" }}
+                  transition={{ duration: 0.4, ease: "circOut" as const }}
                 />
 
                 {/* Mega Menu Dropdown — Redesigned for Premium Look */}
@@ -297,7 +297,7 @@ export default function Header() {
                              <motion.div 
                                 className="absolute inset-0 bg-white"
                                 animate={{ x: ['-100%', '100%'] }}
-                                transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+                                transition={{ duration: 1.5, repeat: Infinity, ease: "linear" as const }}
                              />
                           </div>
                         </Link>

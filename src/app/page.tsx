@@ -27,7 +27,7 @@ export default function Home() {
         <motion.div 
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.4 }}
-          transition={{ duration: 2, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" as const }}
           className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/80 via-transparent to-luxury-black/90" />
@@ -90,7 +90,7 @@ export default function Home() {
         <div className="relative flex overflow-x-hidden group">
           <motion.div 
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 30, repeat: Infinity, ease: "linear" as const }}
             className="flex whitespace-nowrap gap-20 items-center py-4"
           >
             {/* First Set of Logos */}
@@ -145,7 +145,7 @@ export default function Home() {
           initial={{ x: 50, opacity: 0.6 }}
           whileInView={{ x: 0, opacity: 0.8 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" as const }}
           className="absolute right-0 top-0 w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1541604193435-22287d32c2c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center" 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-50 via-zinc-50 to-transparent z-10" />
@@ -171,7 +171,7 @@ export default function Home() {
           initial={{ x: -50, opacity: 0.2 }}
           whileInView={{ x: 0, opacity: 0.4 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" as const }}
           className="absolute left-0 top-0 w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center" 
         />
         <div className="absolute inset-0 bg-gradient-to-l from-luxury-black via-luxury-black to-transparent z-10" />
