@@ -79,7 +79,7 @@ const megaMenuVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1], // Custom cubic-bezier for luxury feel
+      ease: [0.22, 1, 0.36, 1] as const, // Custom cubic-bezier for luxury feel
       staggerChildren: 0.08,
       delayChildren: 0.1
     }
